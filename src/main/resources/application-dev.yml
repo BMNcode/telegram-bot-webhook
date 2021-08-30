@@ -1,0 +1,16 @@
+logging:
+  level:
+    ROOT: INFO
+    org.bmn.telegrambotwebhook: DEBUG
+
+spring:
+  rabbitmq:
+    host: ${RABBIT_HOST}
+    port: ${RABBIT_PORT}
+    username: ${RABBIT_USERNAME}
+    password: ${RABBIT_PASSWORD}
+
+telegram:
+  botUserName: ${TELGRAM_BOT_USERNAME}
+  botToken: ${TELEGRAM_BOT_TOKEN}
+  webHookPath: ${TELEGRAM_BOT_WEBHOOK}
